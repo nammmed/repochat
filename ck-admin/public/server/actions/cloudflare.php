@@ -884,3 +884,33 @@ function updateDNSRecords($data) {
         ]);
     }
 }
+
+
+function generateDNSFile($domain, $ip) {
+    $file = ";;
+;; Domain:     {$domain}.
+;; Exported:   " . date('Y-m-d H:i:s') . "
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.
+;;
+{$domain}.      3600    IN      SOA     {$domain}. root.{$domain}. " . time() . " 7200 3600 86400 3600
+
+;; A Records
+ftp.{$domain}.  1       IN      A       {$ip}
+go.{$domain}.   1       IN      A       {$ip}
+{$domain}.      1       IN      A       {$ip}
+imap.{$domain}. 1       IN      A       {$ip}
+mail.{$domain}. 1       IN      A       {$ip}
+pop.{$domain}.  1       IN      A       {$ip}
+push.{$domain}. 1       IN      A       {$ip}
+smtp.{$domain}. 1       IN      A       {$ip}
+www.{$domain}.  1       IN      A       {$ip}
+
+;; MX Records
+{$domain}.      1       IN      MX      20 mail.{$domain}.
+{$domain}.      1       IN      MX      10 mail.{$domain}.
+";
+    return $file;
+}

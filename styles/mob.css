@@ -1,0 +1,427 @@
+	@charset "utf-8";
+	/* Global Styles */
+
+@media screen and (max-width:1440px) {
+	.header_top,
+	.header_bottom{
+		width: calc(100% - 60px);
+		left: 30px;
+	}
+}
+@media screen and (max-width:1280px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.interestingPreview_cont,
+	.picturesquePreview_cont,
+	.newsPreview_cont,
+	.article_cont,
+	.partners_box,
+	.RegionOther_cont,
+	.RegionMore_cont{
+		grid-gap: 15px;
+	}
+	.partnersHeader .header_img{
+		height: 880px;
+		width: auto;
+		max-width: inherit;
+	}
+}
+@media screen and (max-width:1150px) {
+	.headerNav {
+		display: none;
+	}
+	.open_mobmenu {
+		display: block;
+		width: 30px;
+		height: 19px;
+		background: url("../images/burger.svg");
+	}
+	.interestingPreview_bottom,
+	.RegionOther_bottom{
+		left: 15px;
+	}
+	.partners_box{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.partnersHeader .header_img {
+		height: 1000px;
+	}
+	
+}
+
+@media screen and (max-width:1024px) {
+	h1,
+	.header_content h1{
+		font-size: 32px;
+		line-height: 37.5px;
+	}
+	.header_content h3 {
+		font-size: 18px;
+		line-height: 21px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+	.copy {
+		display: none;
+	}
+	.copy_mob {
+		display: block;
+		grid-column: span 2;
+	}
+	footer .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.footer_column:nth-child(4){
+		order: 1;
+	}
+	.footer_column:nth-child(1),
+	.footer_column:nth-child(2),
+	.footer_column:nth-child(3),
+	.copy_mob{
+		order:2;
+	}
+	.aboutRegion_text {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 27px;
+	}
+	.wineryTop_text {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.wineryDescription_container {
+		display: flex;
+		flex-flow: column;
+	}
+	.article_name {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.article_cont {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.header_category ul li {
+		margin: 5px;
+	}
+	.blogHeader .header_img {
+		height: 400px;
+	}
+	.article_arrowRight {
+		right: 40px;
+	}
+	.article_arrowLeft {
+		left: 40px;
+	}
+	.articleSlide {
+    	min-width: 30%;
+		max-width: 30%;
+	}
+	.partner {
+		padding: 20px;
+	}
+	.partner_title {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.partners_box {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	
+}
+
+@media screen and (max-width:800px) {
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.interestingPreview_cont,
+	.picturesquePreview_cont,
+	.newsPreview_cont,
+	.article_cont,
+	.partners_box,
+	.RegionOther_cont,
+	.RegionMore_cont{
+		grid-gap: 10px;
+	}
+	.picturesquePreview_cont,
+	.newsPreview_cont,
+	.interestingPreview_cont,
+	.RegionOther_cont{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.picturesquePreview_box:nth-child(1),
+	.picturesquePreview_box:nth-child(2),
+	.picturesquePreview_box:nth-child(3),
+	.picturesquePreview_box:nth-child(4),
+	.picturesquePreview_box:nth-child(5){
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.picturesquePreview_box:nth-child(4),
+	.header_bottom{
+		display: none;
+	}
+	.header_logo {
+		width: 110px;
+		height: 22.71px;
+		background-size: cover;
+	}
+	.header_img {
+		height: 320px;
+		width: auto;
+	}
+	.regionHeader .header_img,
+	.wineryHeader .header_img{
+		height: 545px;
+	}
+	
+	header {
+		margin-bottom: 41px;
+	}
+	.interestingPreview_cont {
+		margin-bottom: 20px;
+	}
+	.more {
+		margin-bottom: 40px;
+	}
+	.picturesquePreview {
+		padding-top: 27px;
+		padding-bottom: 30px;
+		margin-bottom: 36px;
+	}
+	.newsPreview_box {
+		margin-bottom: 26px;
+	}
+	.backForm h1 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.backForm_title {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.backForm {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.aboutRegion {
+		background: none;
+		border: none;
+		margin-top: -265px;
+	}
+	.aboutRegion .container {
+		padding-bottom: 0;
+	}
+	.regionMap {
+		height: 250px;
+		background-size: cover;
+		padding-top: 41px;
+		padding-bottom: 51px;
+	}
+	.aboutRegion .container {
+		padding-top: 0;
+	}
+	.aboutRegion_img {
+		order: 1;
+		width: 100%;
+		max-width: 372px;
+	}
+	.aboutRegion_text {
+		order: 2;
+	}
+	.regionHeader h3 {
+		display: none;
+	} 
+	.aboutRegion .container,
+	.wineryTop .container{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+	.regionHeader .header_content h1 {
+		position: relative;
+		top: -100px;
+	}
+	.wineryTop {
+		background: none;
+	} 
+	.wineryBooking .wineryBooking_text {
+		width: 100%;
+		padding: 40px 20px 20px;
+	}
+	.wineryBooking_link {
+		display: none;
+	}
+	.wineryDescription_text {
+		padding: 46px 9px 25px;
+	}
+	.wineryDescription_numbers_box span:first-child {
+		font-size: 36px;
+		line-height: 32px;
+	}
+	.wineryDescription_numbers_box span:last-child {
+		max-width: 75px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.wineryDescription_numbers {
+		margin-bottom: 17px;
+	}
+	.wineryCenter .container {
+		display: flex;
+		flex-flow: column;
+	}
+	.wineryCenter_text {
+		order: 1;
+		padding-bottom: 0;
+	}
+	.wineryCenter_img {
+		order: 2;
+		margin-top: 0;
+		margin-left: -20px;
+		margin-right: -20px;
+		width: calc(100% + 40px);
+	}
+	.wineRow {display: none;}
+	.wineryMap {
+		padding-top: 120px;
+		padding-bottom: 20px;
+		height: 373px;
+		margin-bottom: 67px;
+	}
+	.wineryMap_box {
+		max-width: 100%;
+	}
+	.wineryTop_img {
+		width: 100%;
+        max-width: 372px;
+		margin-top: -175px;
+	}
+	.wineryHeader .header_content {
+		top: -70px;
+	} 
+	.header_category ul li {
+		font-size: 14px;
+	}
+	.content_category ul li {
+		font-size: 14px;
+		margin: 5px;	
+	}
+	article h1 {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 11px;
+	}
+	article h3 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	article p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	blockquote {
+		padding: 15px 12px;
+		font-size: 16px;
+		line-height: 25px;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.partners_box {
+		margin-left: 20px;
+		margin-right: 20px;	
+	}
+}
+
+@media screen and (max-width:600px) {
+	.interestingPreview_cont,
+	.newsPreview_cont,
+	.RegionOther_cont,
+	.article_cont,
+	.article_box
+	{
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+	}
+	.interestingPreview_box,
+	.RegionOther_box{
+		width: 373px;
+		height: 200px;
+	}
+	.interestingPreview_box:nth-child(1),
+	.interestingPreview_box:nth-child(2),
+	.interestingPreview_box:nth-child(3),
+	.interestingPreview_box:nth-child(4),
+	.interestingPreview_box:nth-child(5),
+	.newsPreview_box,
+	.RegionOther_box:nth-child(1),
+	.RegionOther_box:nth-child(2),
+	.RegionOther_box:nth-child(3),
+	.RegionOther_box:nth-child(4),
+	.RegionOther_box:nth-child(5){
+		grid-column: span 1;
+		grid-row: span 1;
+		margin: 0 auto;
+	}
+	.newsPreview_box {
+		width: 100%;
+		max-width: 373px;
+	}
+	.newsPreview_img {
+		margin-bottom: 6px;
+	}
+	.newsPreview_name {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.footer_column {
+		width: 100%;
+		position: relative;
+		margin-bottom: 38px;
+	}
+	
+	.interestingPreview_box img {
+		width: 100%;
+		height: auto;
+		min-height: 100%;}
+	footer .container,
+	.partners_box{
+		display: flex;
+		flex-flow: column;
+	}
+	.cos {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+	}
+	.winerySlide {
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.wineRow {display: none;}
+	.wineryCollection {
+		padding-bottom: 47px;
+	}
+	.pagination {
+		display: none;
+	}
+	.article_img {
+		margin-bottom: 6px;
+	}
+	.article_box {
+		margin-bottom: 26px;
+	}
+	.articleSlide {
+        min-width: 100%;
+        max-width: 100%;
+    }
+	.partnersHeader .header_img {
+		height: 1540px;
+	}
+}
